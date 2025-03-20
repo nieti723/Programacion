@@ -1,0 +1,43 @@
+# Archivos de Eclipse
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*.sln
+*.class
+*.project
+*.classpath
+*.settings/
+*.vscode/
+
+# Archivos de compilación y dependencias de Java
+target/
+out/
+build/
+*.jar
+*.war
+*.ear
+*.log
+*.iml
+
+# Configuración de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de Maven
+.mvn/
+!**/src/main/**/target/
+!**/src/test/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Archivos de cache y logs
+hs_err_pid*
+*.log
+

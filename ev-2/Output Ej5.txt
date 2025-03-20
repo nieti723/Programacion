@@ -1,0 +1,51 @@
+VEHÍCULOS
+=========
+1. Anda con la bicicleta
+2. Haz el caballito con la bicicleta
+3. Anda con el coche
+4. Quema rueda con el coche
+5. Ver kilometraje de la bicicleta
+6. Ver kilometraje del coche
+7. Ver kilometraje total
+8. Ver vehículos creados 
+9. Salir
+Escriba una opción de la 1 a la 9:
+1
+¿Cuántos kms has hecho con la bici?:
+4
+
+
+
+VEHÍCULOS
+=========
+1. Anda con la bicicleta
+2. Haz el caballito con la bicicleta
+3. Anda con el coche
+4. Quema rueda con el coche
+5. Ver kilometraje de la bicicleta
+6. Ver kilometraje del coche
+7. Ver kilometraje total
+8. Ver vehículos creados 
+9. Salir
+Escriba una opción de la 1 a la 9:
+2
+Estoy haciendo un caballito (emoticono/emoji) --> Al tercer caballito (Ocurra algo)
+
+Con la opción 4 haz lo mismo (Emoji + evento)
+
+
+
+VEHÍCULOS
+=========
+1. Anda con la bicicleta
+2. Haz el caballito con la bicicleta
+3. Anda con el coche
+4. Quema rueda con el coche
+5. Ver kilometraje de la bicicleta
+6. Ver kilometraje del coche
+7. Ver kilometraje total
+8. Ver vehículos creados 
+9. Salir
+Escriba una opción de la 1 a la 9:
+9
+BUILD SUCCESSFUL (total time: 7 seconds)

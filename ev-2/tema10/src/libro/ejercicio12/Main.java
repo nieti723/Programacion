@@ -24,7 +24,7 @@ public class Main {
 		HashMap<String, Integer> valoresCartas = new HashMap<>();
 		// Añadimos los valores al HashMap
 		valoresCartas.put("As", 11);
-		valoresCartas.put("tres", 10);
+		valoresCartas.put("Tres", 10);
 		valoresCartas.put("Sota", 2);
 		valoresCartas.put("Caballo", 3);
 		valoresCartas.put("Rey", 4);

@@ -18,10 +18,16 @@ public class Camion extends MedioDeTransporte {
 			break;
 		}
 		contadorPitos++;
+		System.out.println(getSonidoCamion());
 	}
 
 	public String getSonidoCamion() {
 		return sonidoCamion;
 	}
 
+	@Override
+	public String toString() {
+		return "Camion: " + super.toString() + "\nClaxon: " + sonidoCamion;
+	}
+	
 }

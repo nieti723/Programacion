@@ -5,6 +5,7 @@ public class MedioDeTransporte {
 	protected final int anyoFabricacion;
 	protected Claxon claxon;
 	protected static int contadorPitos;
+	protected int numSonidos = 1;
 	
 	// CONSTRUCTOR 
 	public MedioDeTransporte(int anyoFabricacion, Claxon claxon) {
@@ -30,4 +31,10 @@ public class MedioDeTransporte {
 		return contadorPitos;
 	}
 
+	@Override
+	public String toString() {
+		return "\nAño de fabricación: " + anyoFabricacion + "\nNúmero de sonidos: " + numSonidos;
+	}
+
+	
 }

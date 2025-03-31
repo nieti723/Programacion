@@ -1,6 +1,5 @@
 package simulacroCamion;
 
-import java.util.ArrayList;
 
 public class Coche extends MedioDeTransporte {
 
@@ -21,8 +20,8 @@ public class Coche extends MedioDeTransporte {
 		contadorPitos += tam;
 		numSonidos = tam;
 		String[] melodia = new String[tam];
-		melodia[0] = SonidosMelodia.values()[1].name();
-		melodia[tam-1] = SonidosMelodia.values()[1].name();
+		melodia[0] = SonidosMelodia.pii.name();
+		melodia[tam-1] = SonidosMelodia.pii.name();
 		for (int i = 1; i < tam - 1; i++) {
 			int valor = (int) (Math.random() * 6);
 			melodia[i] = SonidosMelodia.values()[valor].name();
@@ -37,20 +36,20 @@ public class Coche extends MedioDeTransporte {
 		}
 	}
 	
-	public ArrayList<String> clonaMelodia(){
+	public static String clonaMelodia(String[] mel){
 		
-		ArrayList<String> copia = new ArrayList<>();
-		for (String string : melodia)
-		{
-			copia.add(string);
-		}
-		
-		return copia;
+	    	String copiaMel = String.join(", ", mel);
+	    
+		return copiaMel;
 	}
 
 	@Override
 	public String toString() {
 		return "Coche: " + super.toString() + "\nTipo de claxon: " + claxon;
+	}
+
+	public String[] getMelodia() {
+	    return melodia;
 	}
 	
 }

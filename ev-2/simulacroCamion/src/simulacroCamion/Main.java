@@ -26,10 +26,8 @@ public class Main {
 	boolean salir = false;
 	// bolean para saber si la primera iteración ha pasado
 	boolean primera = true;
-
-	// Pruebas
-	String prueba = SonidosMelodia.values()[1].name();
-	System.out.println(prueba);
+	// ArrayList para almacenar las melodías elegidas
+	ArrayList<String> favoritas = new ArrayList<>();
 	
 	while (!salir) {
 	    System.out.println();
@@ -81,14 +79,14 @@ public class Main {
 		    if (coche != null) {
 			System.out.println(coche);
 			mostrados++;
-			System.out.println("----------");
+			System.out.println("-----------------------");
 		    }
 		}
 		for (Camion camion : camiones) {
 		    if (camion != null) {
 			System.out.println(camion);
 			mostrados++;
-			System.out.println("----------");
+			System.out.println("-----------------------");
 		    }
 		}
 		System.out.println("Se han mostrado " + mostrados + " medios de transporte");
@@ -102,7 +100,7 @@ public class Main {
 		    }
 		}
 		op = s.nextInt();
-		ArrayList<String> copia = coches[op - 1].clonaMelodia();
+		favoritas.add(Coche.clonaMelodia(coches[op-1].getMelodia())); 
 
 		break;
 	    default:

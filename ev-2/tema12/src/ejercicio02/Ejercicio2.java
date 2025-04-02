@@ -21,7 +21,7 @@ public class Ejercicio2 {
 		}
 		
 	    }
-	    
+	    br.close();
 	} catch (IOException e) {
 	    System.out.println("Fichero inaccesible");
 	}

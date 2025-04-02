@@ -2,6 +2,7 @@ package ejercicio02;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Ejercicio2 {
 
@@ -21,7 +22,7 @@ public class Ejercicio2 {
 		
 	    }
 	    
-	} catch (Exception e) {
+	} catch (IOException e) {
 	    System.out.println("Fichero inaccesible");
 	}
 

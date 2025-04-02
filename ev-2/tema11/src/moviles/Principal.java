@@ -20,7 +20,7 @@ public class Principal {
 		moviles.add(new Movil("Xiaomi Mi 10 Pro", 999));
 		moviles.add(new Movil("Samsung S30", 1300));
 		moviles.add(new Movil("Huawei P50 Pro+", 1399));
-		moviles.add(new Movil("Samsung Z Flip 5G", 1550));
+		moviles.add(new Movil("Samsung Z Flip 4G", 1550));
 		moviles.add(new Movil("Huawei P40 Pro+", 1399));
 		
 		//Hecho con bucle 
@@ -31,21 +31,21 @@ public class Principal {
 //			}
 //		}
 		
-//		Collections.sort(moviles);
-//		for (Movil movil : moviles) {
-//			System.out.println(movil);
-//		}
-
-		//Hecho con Hash para eliminar duplicados
-		HashSet<Movil> movilesSinDup = new HashSet<>();
-		movilesSinDup.addAll(moviles);
-		moviles.clear();
-		moviles.addAll(movilesSinDup);
 		Collections.sort(moviles);
-		
 		for (Movil movil : moviles) {
 			System.out.println(movil);
 		}
+
+//		//Hecho con Hash para eliminar duplicados
+//		HashSet<Movil> movilesSinDup = new HashSet<>();
+//		movilesSinDup.addAll(moviles);
+//		moviles.clear();
+//		moviles.addAll(movilesSinDup);
+//		Collections.sort(moviles);
+//		
+//		for (Movil movil : moviles) {
+//			System.out.println(movil);
+//		}
 		
 		
 	}

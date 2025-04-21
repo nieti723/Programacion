@@ -16,8 +16,8 @@ public class Ejercicio04 {
 	} else {
 	    try {
 		
-		BufferedReader br = new BufferedReader(new FileReader("/home/nieto/Documentos/1ºDAW/programacion/ev-2/tema12/src/ejercicio04/" + args[0]));
-		BufferedWriter bw = new BufferedWriter(new FileWriter("/home/nieto/Documentos/1ºDAW/programacion/ev-2/tema12/src/ejercicio04/palabras_sort"));
+		BufferedReader br = new BufferedReader(new FileReader(args[0] + ".txt"));
+		BufferedWriter bw = new BufferedWriter(new FileWriter(args[0] + "_sort.txt"));
 		ArrayList<String> palabras = new ArrayList<>();
 		String linea = "";
 		

@@ -30,13 +30,17 @@ public class Ejercicio02 {
 
 		try {
 			BufferedWriter bf = new BufferedWriter(new FileWriter("mes" + args[0] + ".txt"));
-			for (int i = 0; i < (daysCounter); i++) {
+			for (int i = 0; i < daysCounter - 1; i++) {
 				bf.write("\t");
 			}
 			
 			for (int i = 1; i <= months[userMonth]; i++) {
-				bf.write(i + "" + days.get(daysCounter) + "\t");
-				daysCounter++;
+				if (i == 1) {
+					bf.write(i + "" + days.get(daysCounter) + "\t");
+				} else {
+					daysCounter++;
+					bf.write(i + "" + days.get(daysCounter) + "\t");					
+				}
 				if (daysCounter == 6) {
 					daysCounter = 0;
 					bf.newLine();

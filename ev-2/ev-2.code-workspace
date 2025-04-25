@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "interfaces"
+		},
+		{
+			"path": "tema09"
+		},
+		{
+			"path": "tema10"
+		},
+		{
+			"path": "tema11"
+		},
+		{
+			"path": "tema12"
+		},
+		{
+			"path": "tema13"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"src"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": []
+	}
+}

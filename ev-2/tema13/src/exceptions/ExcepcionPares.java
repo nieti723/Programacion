@@ -1,4 +1,4 @@
-package suma;
+package exceptions;
 
 public class ExcepcionPares extends Exception{
 	

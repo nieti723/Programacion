@@ -3,7 +3,8 @@ package suma;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import lib.ExcepcionesPropias;
+import exceptions.ExcepcionPares;
+import exceptions.ExcepcionesPropias;
 
 public class Suma {
 

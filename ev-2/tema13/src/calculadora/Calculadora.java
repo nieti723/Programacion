@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import exceptions.ExcepcionDivision;
 import exceptions.ExcepcionIntervalo;
+import exceptions.ExcepcionRango;
 import exceptions.ExcepcionResta;
 import exceptions.ExcepcionesPropias;
 
@@ -26,6 +27,8 @@ public class Calculadora {
 		// Enteros que almacenan los operandos
 		int n1 = 0;
 		int n2 = 0;
+		// Máximo entero que se va a poder meter
+		int max = 1000;
 
 		do {
 			System.out.println("--- CALCULADORA ---");
@@ -67,9 +70,13 @@ public class Calculadora {
 						try {
 							System.out.print("Introduce el primer operando: ");
 							n1 = s.nextInt();
+							ExcepcionesPropias.fueraRango(n1, max);
 						} catch (InputMismatchException e) {
 							System.out.println("Debe introducir un número entero");
 							s.nextLine();
+							error = true;
+						} catch (ExcepcionRango e) {
+							System.out.println(e.getMessage());
 							error = true;
 						}
 					} while (error);
@@ -79,9 +86,13 @@ public class Calculadora {
 						try {
 							System.out.print("Introduce el segundo operando: ");
 							n2 = s.nextInt();
+							ExcepcionesPropias.fueraRango(n2, max);
 						} catch (InputMismatchException e) {
 							System.out.println("Debe introducir un número entero");
 							s.nextLine();
+							error = true;
+						} catch (ExcepcionRango e) {
+							System.out.println(e.getMessage());
 							error = true;
 						}
 					} while (error);

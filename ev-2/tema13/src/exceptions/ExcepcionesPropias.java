@@ -25,5 +25,11 @@ public class ExcepcionesPropias {
 			throw new ExcepcionDivision("El divisor no puede ser 0");
 		}
 	}
+
+	public static void fueraRango(int n, int tam) throws ExcepcionRango{
+		if (n > tam) {
+			throw new ExcepcionRango("El valor no puede ser mayor a " + tam);
+		}
+	}
 	
 }

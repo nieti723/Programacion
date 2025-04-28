@@ -1,5 +1,5 @@
 public class Ejercicio02 {
     public static void main(String[] args) {
-        System.out.println(Funciones.fibonacci(3));
+        System.out.println(Funciones.fibonacci(1));
     }
 }

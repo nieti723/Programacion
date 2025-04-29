@@ -47,4 +47,11 @@ public class Funciones {
         }
     }
 
+    public static int multiplicar(int n1, int n2) {
+        if (n2 <= 1) {
+            return n1;
+        } else {
+            return n1 + multiplicar(n1, n2 - 1);
+        }
+    }
 }
